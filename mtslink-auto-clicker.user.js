@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Небольшой скрипт для автоматического нажатия кнопки в контроле присутствия
-// @match        https://*mts-link.ru/*
+// @match        https://*.mts-link.ru/*
 // @grant        none
 // @author       Seljaie
 // ==/UserScript==
