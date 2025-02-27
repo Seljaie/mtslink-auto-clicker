@@ -1,4 +1,5 @@
 // ==UserScript==
+// @author       Seljaie
 // @name         Авто кликер для MTS Link
 // @namespace    http://tampermonkey.net/
 // @version      1.0
@@ -14,7 +15,7 @@
         var button = document.querySelector('[aria-describedby="myDescription"]');
         if (button) {
             button.click();
-            console.log("Кнопка нажата");
+            alert("Готово");
             clearInterval(intervalId);
         }
     }
