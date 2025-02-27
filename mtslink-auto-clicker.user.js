@@ -6,6 +6,7 @@
 // @match        https://*.mts-link.ru/*
 // @grant        none
 // @author       Seljaie
+// @icon64       https://raw.githubusercontent.com/Seljaie/mtslink-auto-clicker/main/icon.png
 // ==/UserScript==
 
 (function() {
@@ -15,7 +16,7 @@
         var button = document.querySelector('[data-testid="StreamTopBar.BurgerMenu.settings"]');
         if (button) {
             button.click();
-            alert("Готово");
+            console.log("Отмечен");
             clearInterval(intervalId);
         }
     }
