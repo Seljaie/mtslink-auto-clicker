@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Авто кликер для MTS Link
 // @namespace    http://tampermonkey.net/
-// @version      0.65
+// @version      0.7
 // @description  Небольшой скрипт для автоматического нажатия кнопки в контроле присутствия
 // @match        https://*.mts-link.ru/*
 // @grant        none
@@ -13,7 +13,7 @@
     'use strict';
 
     function clickButton() {
-        var button = document.querySelector('[data-testid="StreamTopBar.BurgerMenu.settings"]');
+        var button = document.querySelector('[data-testid="AttentionControlModal.action.submit.Button"]');
         if (button) {
             button.click();
             const now = new Date();
