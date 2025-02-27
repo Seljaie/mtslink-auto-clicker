@@ -12,7 +12,7 @@
     'use strict';
 
     function clickButton() {
-        var button = document.querySelector('[aria-describedby="myDescription"]');
+        var button = document.querySelector('[data-testid="StreamTopBar.BurgerMenu.settings"]');
         if (button) {
             button.click();
             alert("Готово");
