@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Авто кликер для MTS Link
 // @namespace    http://tampermonkey.net/
-// @version      0.7
+// @version      0.75
 // @description  Небольшой скрипт для автоматического нажатия кнопки в контроле присутствия
 // @match        https://*.mts-link.ru/*
 // @grant        none
@@ -22,5 +22,6 @@
             clearInterval(intervalId);
         }
     }
+    console.log("Автокликер запущен");
     var intervalId = setInterval(clickButton, 1000);
 })();
